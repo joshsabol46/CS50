@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            body {
+                background-color: white;
+            }
+            .item-a {
+                grid-area: header-left;
+                text-align: left;
+                background-color: red;
+            }
+
+            .item-b {
+                grid-area: header-right;
+                grid-template-columns: auto auto;
+                grid-template-areas:
+                    "1" "2";
+                align-items: stretch;
+                text-align: right;
+                background-color: red;
+            }
+
+            .item-b sub-1 {
+                grid-area: 1;
+                background-color: green;
+            }
+
+            .item-b sub-1 {
+                grid-area: 2;
+                background-color: purple;
+            }
+
+            .item-c {
+                grid-area: main;
+                justify-items: center;
+                align-items: center;
+                background-color: blue;
+            }
+
+            .item-d {
+                grid-area: footer-left;
+                text-align: left;
+                background-color: red;
+            }
+
+            .item-e {
+                grid-area: footer-right;
+                text-align: right;
+                background-color: red;
+            }
+
+            .container {
+                width: 100vw;
+                height: 100vh;
+                display: grid;
+                grid-template-columns: 200px auto 200px;
+                grid-template-rows: 50px auto 50px;
+                grid-template-areas: 
+                    "header-left . header-right"
+                    ". main ."
+                    "footer-left . footer-right";
+                align-items: stretch;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item-a">header-left</div>
+            <div class="item-b">
+                <span class="sub-1">Image</span>
+                <span class="sub-2">Advanced</span>
+            </div>
+            <div class="item-c">
+                <form action="https://google.com/search">
+                    <input type="text" name="q">
+                    <input type="submit" value="Google Search">
+                </form>
+            </div>   
+            <div class="item-d">footer-left</div>
+            <div class="item-e">footer-right</div> 
+        </div>        
+    </body>
+</html>

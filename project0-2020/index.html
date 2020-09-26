@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            .header {
+                height: 50px;
+                width: 100%;
+                text-align: right;
+            }
+
+            .header li {
+                display: inline-block;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            .main {
+                padding-top: 10%;
+                background-color: beige;
+            }
+
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                /* margin-bottom: 30px; */
+                /* background-color: red; */
+            }
+
+            .search {
+                
+                
+                /* position: relative;
+                top: 20px;
+                width: 580px;
+                height: 20px;
+                width: 600px;
+                height: 200px;
+                margin: auto; */
+            }
+
+            .search-box {
+                /* Google */
+                background: #fff;
+                display: flex;
+                border: 1px solid #dfe1e5;
+                box-shadow: none;
+                border-radius: 24px;
+                z-index: 3;
+                height: 44px;
+                margin: 0 auto;
+                width: 482px;
+
+                /* border: 1px solid #f2f2f2;
+                background: #fff;
+                border-radius: 45px;
+                width: 600px;
+                height: 40px; */
+            } 
+
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <ul>
+                <li><a href="image-search.html">Image Search</a></li>
+                <li><a href="advanced-search.html">Advanced Search</a></li>
+            </ul>
+        </div>
+        <div class="main">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+            <div class="search">
+                <form action="https://google.com/search">
+                    <div class="search-box">
+                        <span class="material-icons">search</span>
+                        <input type="text" name="q">
+                    </div>
+                    <div class="search-buttons">
+                        <input type="submit" value="Google Search">
+                        <input type="submit" value="I'm Feeling Lucky">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
