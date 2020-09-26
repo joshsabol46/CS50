@@ -1,5 +1,5 @@
-# Wiki like online encyclopedia creation using Django, Python, HTML, CSS and Bootstrap.
+# Copied from NeomiSony
 
-The youtube link is given below
+#### Blew up my URLS from my own project, and gave up.  Starting from Random.
 
-https://youtu.be/LWwebcEi8c4
+#frustrating
