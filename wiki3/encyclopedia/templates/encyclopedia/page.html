@@ -7,7 +7,7 @@ Encyclopedia | {{title}}
 {% block body %}
 
 {{ content|safe }}
-<a href="{%url 'edit_page' title%}">
+<a href="{%url 'edit' title%}">
     <button type="submit" class="btn btn-outline-primary" style="margin-top: 25px;">Edit page</button>
 </a>
 {% endblock %}
